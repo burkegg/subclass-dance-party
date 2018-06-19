@@ -28,7 +28,6 @@ $(document).ready(function() {
       //Math.random() * 1000
       30
     );
-    console.log(dancer)
     $('body').append(dancer.$node);
   });
 });
