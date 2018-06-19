@@ -24,7 +24,7 @@ describe('blinkyDancer', function() {
       expect(blinkyDancer.step.callCount).to.be.equal(0);
       //clock.tick(timeBetweenSteps); // ? it seems an extra tick is necessary...
       clock.tick(timeBetweenSteps);
-     clock.tick(timeBetweenSteps);
+      clock.tick(timeBetweenSteps);
       console.log('callcount ', blinkyDancer.step.callCount);
       expect(blinkyDancer.step.callCount).to.be.equal(1);
 
