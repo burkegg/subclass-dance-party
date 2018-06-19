@@ -10,6 +10,7 @@ var makeDancer = function(top, left, timeBetweenSteps) {
   // this one sets the position to some random default point within the body
   this.setPosition(top, left);
   this.left = left;
+  this.move = true;
 
 };
 
@@ -32,6 +33,10 @@ makeDancer.prototype.setPosition = function(top, left) {
 
 };
 
-makeDancer.prototype.lineUp = function() {
+makeDancer.prototype.lineUp = function(top) {
+  //console.log(this);
+  console.log($(window).height());
   this.left = 10;
+  this.setPosition(top, this.left);
+  this.move = false;
 };
