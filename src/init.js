@@ -29,12 +29,20 @@ $(document).ready(function() {
       30
     );
     $('body').append(dancer.$node);
+     window.dancers.push(dancer);
+    
   });
-  
+ 
   
   $('.lineUpButton').on('click', function(event) {
-    window.dancers.forEach(function(dancer) {
-      dancer.lineUp();
+    var numsOfDancers = window.dancers.length;
+    console.log(numsOfDancers)
+    var height = $(window).height();
+    
+    window.dancers.forEach(function(dancer, index) {
+      var top = (height / numsOfDancers) * (index + 1);
+      
+      dancer.lineUp(top);
     });
   });
 });
