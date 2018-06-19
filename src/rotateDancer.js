@@ -1,6 +1,6 @@
 var makeRotateDancer = function(top, left, timeBetweenSteps) {
   makeDancer.apply(this, arguments);
-  this.$node = $('<span class="makeRotateDancer"></span>');
+  this.$node = $('<span class="makeRotateDancer" ><img src="src/pic.png" alt="rainbow circle"></span>');
   this.top = top;
   this.left = left;
   this.setPosition(top, left);
