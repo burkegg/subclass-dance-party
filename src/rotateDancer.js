@@ -15,10 +15,10 @@ makeRotateDancer.prototype.step = function() {
   
   // $('.makeRotateDancer').click(function() {
   //   this.transform = rotate(20);
-    // $('.makeRotateDancer').animate({
-    //   transform: rotate(20),
-    // }, 5000, function(){});
-      //$('.makeRotateDancer').css("transform","rotate(20deg)")
+  // $('.makeRotateDancer').animate({
+  //   transform: rotate(20),
+  // }, 5000, function(){});
+  //$('.makeRotateDancer').css("transform","rotate(20deg)")
     
   //     step:function(now, fx) {
   //       $(this).css('transform', 'rotate('+now+'deg)');
@@ -33,4 +33,4 @@ makeRotateDancer.prototype.step = function() {
   // }, 'linear');
   //this.setPosition(this.top, this.left)
 // });
-}
+};
