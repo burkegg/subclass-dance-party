@@ -29,18 +29,17 @@ $(document).ready(function() {
       30
     );
     $('body').append(dancer.$node);
-     window.dancers.push(dancer);
+    window.dancers.push(dancer);
     
   });
  
   
   $('.lineUpButton').on('click', function(event) {
     var numsOfDancers = window.dancers.length;
-    console.log(numsOfDancers)
-    var height = $(window).height();
+    var height = $(window).height(); //927
     
     window.dancers.forEach(function(dancer, index) {
-      var top = (height / numsOfDancers) * (index + 1);
+      var top = (height / numsOfDancers) * (index + 1); //927/3 * 1, 2, 3
       
       dancer.lineUp(top);
     });
