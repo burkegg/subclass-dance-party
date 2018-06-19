@@ -4,6 +4,7 @@ var makeBouncingDancer = function(top, left, timeBetweenSteps) {
   this.setPosition(top, left);
   this.left = left;
   this.velX = 15;
+  
 };
 
 makeBouncingDancer.prototype = Object.create(makeDancer.prototype);
@@ -12,10 +13,10 @@ makeBouncingDancer.prototype.constructor = makeBouncingDancer;
 makeBouncingDancer.prototype.step = function() {
 // console.log('hello')
   makeDancer.prototype.step.call(this);
-
+  if(this.move === true) {
   //left = left + velX;
   this.left += this.velX;
-  console.log($(window).width());
+  //console.log($(window).width());
   if (this.left >= $(window).width() - 50 ) {
     this.left = $(window).width() - 50;
     this.velX = -this.velX;
@@ -24,4 +25,5 @@ makeBouncingDancer.prototype.step = function() {
     this.left = 10;
   }
   this.setPosition(this.top, this.left);
+}
 };
