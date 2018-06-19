@@ -33,7 +33,7 @@ describe('rotateDancer', function() {
     });
     
     it('should have an image for the dancer', function() {
-        expect(rotateDancer.$node.find('img').prop('src')).to.be.equal("file:///Users/student/code/hrsf98-subclass-dance-party/src/pic.png");
+      expect(rotateDancer.$node.find('img').prop('src')).to.be.equal("file:///Users/student/code/hrsf98-subclass-dance-party/src/pic.png");
     });
   });
   
